@@ -233,7 +233,7 @@ header {
 }
 
 .detail-item {
-    color: var(--muted-color);
+    color: var(--para-color);
     font-size: 13px;
     margin-bottom: 10px;
 }
@@ -250,7 +250,7 @@ header {
 }
 
 .price-prefix {
-    color: var(--muted-color);
+    color: var(--para-color);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.5px;
