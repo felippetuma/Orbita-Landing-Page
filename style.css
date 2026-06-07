@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+    --bg-color: #1d1c1c;
+    --card-bg: #242323;
+    --title-color: #ffffff;
+    --para-color: #c2bfbf;
+    --muted-color: #8c8c8c;
+    --accent-hover: #aaaaaa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1d1c1c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 5%;
+
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    gap: 20px;
+}
+
+.header-logo {
+    color: var(--title-color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: default;
+    flex-shrink: 0;
+}
+
+.header-navs {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.header-navs li a {
+    color: #edf0f1;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    padding: 5px 0;
+    white-space: nowrap;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.header-navs li a:hover, .header-navs li a.active {
+    color: var(--title-color);
+    border-bottom: 2px solid var(--title-color);
+    font-size: 15px;
+}
+
+.header-button {
+    color: var(--title-color);
+    text-decoration: none;
+    font-size: 14px;
+
+    border: 1px solid var(--title-color);
+    padding: 8px 20px;
+    border-radius: 4px;
+
+    background-color: rgba(29, 28, 28, 0.8);
+    backdrop-filter: blur(4px);
+    transition: background 0.3s, color 0.3s;
+}
+
+.header-button:hover {
+    background-color: var(--title-color);
+    color: #000;
+}
+
+/* Quiz section */
+.quiz-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex;
+    
+    padding-top: 15%;
+    padding-left: 20%;
+    padding-bottom: 15%;
+
+    color: #fff;
+    max-width: 615%;
+}
+
+.quiz-section h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.quiz-section p {
+    font-size: 16px;
+    color: #c2bfbf;
+    margin-bottom: 30px;
+}
+
+.quiz-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+
+    font-weight: 500;
+    padding: 15px 35px;
+    border-radius: 4px;
+
+    text-align: center;
+    min-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.quiz-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.quiz-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Plans */
+.plans-main-title {
+    color: var(--title-color);
+    font-size: 45px;
+}
+.plans {
+    padding: 150px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d1c1c;
+    scroll-margin-top: 80px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.plans-price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #d8d4d4;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 40px;
+
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.plans-price span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.plans-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.plan-card {
+    flex: 1;
+    background-color: #242323;
+    border-radius: 24px;
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px;
+}
+
+.plan-title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.plan-description {
+    color: #c2bfbf;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.plan-details {
+    margin-bottom: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+
+.detail-item {
+    color: #8c8c8c;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.detail-item span {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.plan-price-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price-prefix {
+    color: #8c8c8c;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.price-value {
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    line-height: 1;
+}
+
+.price-value span {
+    font-size: 18px;
+    color: #8c8c8c;
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.plans-footer-note {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Sections */
+.sections section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 10%;
+    gap: 15px;
+    scroll-margin-top: 80px;
+    text-align: center;
+}
+
+.section-icon {
+    font-size: 40px;
+    color: var(--title-color);
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.sections h1 {
+    color: var(--title-color);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sections p {
+    color: var(--para-color);
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.section-img {
+    max-width: 100%;
+    width: 350px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #1d1c1c;
+    padding: 60px 5% 30px 5%;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05); 
+    padding-top: 40px;
+}
+
+.footer-navs {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-navs li a {
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.footer-navs li a:hover {
+    color: #ffffff; 
+}
+
+.footer-copyright {
+    color: #555555;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+
+/* Button to top */
+#topButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    
+    background-color: #ffffff1a;
+    color: #fff;
+    border: 1px solid #ffffff33;
+    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    transition: all 0.3s ease;
+}
+
+#topButton:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-3px);
+}
