@@ -99,12 +99,7 @@ let questions = [
 ]
 
 function loadQuestion() {
-
-    if (!quizTitle.textContent) {
-        return;
-    } 
-
-    if (currentQuestion >= questions) {
+    if (currentQuestion >= questions.length) {
        showResult();
        return;
     }
@@ -127,6 +122,10 @@ function registerAnswer(choice) {
     } else if (choice === 'no') {
         points += data.no;
     }
+
+    // Incrementa o contador e carrega a proxima questão
+    currentQuestion++;
+    loadQuestion();
 }
 
 function showResult() {
@@ -135,9 +134,9 @@ function showResult() {
     quizList.innerHTML = "";
 
     if (points >= 4) {
-        quizTitle.innerHTML = `${points} pontos. Você se beneficiaria muito do sistema de Predições e Alertas em tempo real da Orbita para evitar prejuízos financeiros.`;
+        quizTitle.innerHTML = `<strong>${points} pontos.</strong> Você se beneficiaria muito do sistema de Predições e Alertas em tempo real da Orbita para evitar prejuízos financeiros.`;
     } else {
-        quizTitle.innerHTML = `${points} pontos. Seus processos atuais são seguros, mas o Plano Normal da Orbita pode automatizar seu mapeamento por um custo fixo baixo.`;
+        quizTitle.innerHTML = `<strong>${points} pontos.</strong> Seus processos atuais são seguros, mas o Plano Normal da Orbita pode automatizar seu mapeamento por um custo fixo baixo.`;
     }
 }
 
