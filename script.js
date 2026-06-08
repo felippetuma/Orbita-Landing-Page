@@ -14,6 +14,7 @@ window.addEventListener("scroll", function(){
     }
 })
 
+let currentTheme = 0
 function switchTheme() {
     currentTheme = (currentTheme + 1) % 4;
     
