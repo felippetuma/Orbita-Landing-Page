@@ -3,7 +3,7 @@
 
 # Gemini
 
-# Prompt: me de 10 perguntas para o quiz, o quiz vai ter perguntas pra no final ver se o terreno da pessoa precisa do nosso sistema
+# 1. Prompt: me de 10 perguntas para o quiz, o quiz vai ter perguntas pra no final ver se o terreno da pessoa precisa do nosso sistema
 # Resposta: 📋 Perguntas do Quiz "Seu Terreno Precisa da Órbita?"
 
     Você já perdeu parte da produção por causa de uma mudança no clima que te pegou de surpresa?
@@ -36,4 +36,14 @@
     Se você pudesse ver o status da sua fazenda de qualquer lugar, em tempo real, isso facilitaria a sua vida hoje?
     (Foco: Fechamento com chave de ouro para mostrar o valor do Dashboard).
 
-# Foi feito as perguntas do quiz com base na resposta do Gemini
+# Aplicação: Foi feito as perguntas do quiz com base na resposta do Gemini
+
+
+# 2. Prompt: Como eu faço pra automaticamente mudar os slides sem eu ter que ficar clicando na imagem 
+# Resposta: Para fazer as imagens mudarem de slide de forma 100% automática, você só precisa usar uma função nativa do JavaScript chamada setInterval().
+# Ela funciona como um temporizador: você diz para ela qual função executar e de quantos em quantos milissegundos ela deve se repetir.
+
+# Aplicação: Foi feito a automatização do slideshow com base nesse prompt, antes tinha que manualmente clicar na imagem
+
+
+

@@ -3,6 +3,31 @@ function plansButtonClick() {
     alert("O nosso site ainda está em desenvolvimento, volte mais tarde..")
 }
 
+// Lógica do slideshow do index
+let slideIndex = 0;
+let images = [
+    "/assets/images/field_1.jpg",
+    "/assets/images/field_2.jpg",
+    "/assets/images/field_3.jpg",
+    "/assets/images/field_4.jpg",
+];
+
+function switchImage() {
+    image = document.getElementById("slideshow-image")
+
+    if (image && images.length > 0) {
+        image.src = images[slideIndex];
+        
+        slideIndex++;
+        
+        if (slideIndex >= images.length) {
+            slideIndex = 0;
+        }
+    }
+}
+
+setInterval(switchImage, 4000);
+
 function validateForm() {
     let emailInput = document.getElementById("email-input");
 
