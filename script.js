@@ -1,5 +1,10 @@
+// Lógica dos botões para notificação
+function onButtonClick() {
+    alert("O nosso site ainda está em desenvolvimento, volte mais tarde..")
+}
 
-// Botão pra voltar pra cima, quando o eixo Y passar de 500
+
+// Lógica do botão backToTop
 let topButton = document.getElementById("topButton")
 
 function backToTop() {
@@ -7,11 +12,11 @@ function backToTop() {
 }
 
 window.addEventListener("scroll", function(){
-    if (window.pageYOffset > 500) {
+     if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
         topButton.style.display = "flex";
     } else {
         topButton.style.display = "none";
-    }
+  }
 })
 
 let currentTheme = 0
@@ -44,6 +49,7 @@ const quizDesc = document.querySelector('.quiz-description');
 const quizList = document.querySelector('.quiz-list');
 const quizCounter = document.querySelector('.quiz-counter');
 
+// o "yes" adiciona ponto e o "no" tira o ponto, da variavel points 
 let questions = [
     {
         title: "Você já perdeu parte da produção por causa de uma mudança no clima que te pegou de surpresa?",
