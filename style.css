@@ -50,6 +50,17 @@ header {
     letter-spacing: 2px;
     cursor: default;
     flex-shrink: 0;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    transition: transform 0.8s ease;
+}
+
+.header-logo:hover .logo {
+    transform: rotate(360deg);
 }
 
 .header-navs {
