@@ -1,8 +1,19 @@
-// Lógica dos botões para notificação
-function onButtonClick() {
+// Lógica dos botões dos planos
+function plansButtonClick() {
     alert("O nosso site ainda está em desenvolvimento, volte mais tarde..")
 }
 
+function validateForm() {
+    let emailInput = document.getElementById("email-input");
+
+    if (emailInput.value == "") {
+        alert("Por favor, preencha o campo de e-mail antes de enviar.");
+        return
+    
+    } else {
+        alert("Email cadastrado com sucesso!");
+    }
+}
 
 // Lógica do botão backToTop
 let topButton = document.getElementById("topButton")
