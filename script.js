@@ -61,6 +61,7 @@ const quizList = document.querySelector('.quiz-list');
 const quizCounter = document.querySelector('.quiz-counter');
 
 // o "yes" adiciona ponto e o "no" tira o ponto, da variavel points 
+// UPDATE: Eu removi os pontos do no, deixei só com que o yes desse pontos, fica mais lógico assim
 let questions = [
     {
         title: "Você já perdeu parte da produção por causa de uma mudança no clima que te pegou de surpresa?",
