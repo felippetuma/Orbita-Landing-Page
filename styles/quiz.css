@@ -3,6 +3,7 @@
 :root {
     --title-color: #ffffff;
     --para-color: #aaaaaa;
+    --card-bg: #242323;
 }
 
 * {
@@ -32,7 +33,7 @@ body {
 
     gap: 25px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .quiz-title {
@@ -64,11 +65,14 @@ body {
 }
 
 .quiz-button {
+    background-color: var(--card-bg);
     padding: 20px;
     border-radius: 10px;
 
     transition: transform 0.3s ease;
     cursor: pointer;
+
+    fill-opacity: 5%;
 }
 
 .quiz-counter {
