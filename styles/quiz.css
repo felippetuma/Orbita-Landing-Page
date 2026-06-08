@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+    --title-color: #ffffff;
+    --para-color: #aaaaaa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Quiz Section */
+
+.quiz-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10%;
+    gap: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 5%;
+}
+
+.quiz-title {
+    color: var(--title-color);
+    font-size: 40px;
+    font-weight: 600;
+
+    max-width: 600px;
+
+    text-align: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.quiz-description {
+    color: var(--para-color);
+    font-size: 17px;
+    text-align: center;
+
+    opacity: 75%;
+    text-transform: uppercase;
+}
+
+.quiz-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.quiz-button {
+    padding: 20px;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.quiz-button:hover {
+    transform: scale(1.05);
+}
+
+.quiz-button[selected="true"] {
+    background-color: aqua;
+}
+
