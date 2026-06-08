@@ -71,6 +71,13 @@ body {
     cursor: pointer;
 }
 
+.quiz-counter {
+    color: var(--title-color);
+    font-weight: 600;
+    opacity: 70%;
+
+}
+
 .quiz-button:hover {
     transform: scale(1.05);
 }
