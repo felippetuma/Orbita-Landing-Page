@@ -34,3 +34,112 @@ function switchTheme() {
     
 }
 
+
+// Lógica do quiz
+let points = 0
+let currentQuestion = 0
+
+const quizTitle = document.querySelector('.quiz-title');
+const quizDesc = document.querySelector('.quiz-description');
+const quizList = document.querySelector('.quiz-list');
+const quizCounter = document.querySelector('.quiz-counter');
+
+let questions = [
+    {
+        title: "Você já perdeu parte da produção por causa de uma mudança no clima que te pegou de surpresa?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Quando uma praga surge na sua plantação, você costuma demorar para descobrir o foco inicial dela?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Seu terreno tem mais de 2.000 hectares e você sente que é impossível acompanhar tudo de perto visualmente?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Você toma decisões sobre o plantio baseadas no 'achismo' ou na intuição, em vez de usar dados concretos?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Você gostaria de receber avisos automáticos no celular ou computador sempre que houver risco de calor extremo ou granizo na sua região?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Você tem dificuldade para calcular se o valor que gasta por hectare mensalmente está trazendo o retorno esperado?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Você sente falta de recomendações personalizadas de cultivo para o tipo específico de planta que você cultiva?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Se um funcionário ou vizinho notar uma anomalia na terra, você tem um painel centralizado para registrar e acompanhar esse alerta?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Você investe muito dinheiro na lavoura e sente que sua propriedade está desprotegida contra imprevistos do Agronegócio?",
+        yes: 1,
+        no: 0,
+    },
+    {
+        title: "Se você pudesse ver o status da sua fazenda de qualquer lugar, em tempo real, isso facilitaria a sua vida hoje?",
+        yes: 1,
+        no: 0,
+    },
+    
+]
+
+function loadQuestion() {
+
+    if (!quizTitle.textContent) {
+        return;
+    } 
+
+    if (currentQuestion >= questions) {
+       showResult();
+       return;
+    }
+
+    let data = questions[currentQuestion];
+
+    // Setta as strings aqui
+    quizTitle.textContent = data.title;
+    quizCounter.textContent = `${currentQuestion + 1}/${questions.length}`;
+
+    
+}
+
+function registerAnswer(choice) {
+    let data = questions[currentQuestion];
+
+
+    if (choice === 'yes') {
+        points += data.yes;
+    } else if (choice === 'no') {
+        points += data.no;
+    }
+}
+
+function showResult() {
+    quizDesc.textContent = "Diagnóstico Concluído!";
+    quizCounter.textContent = "";
+    quizList.innerHTML = "";
+
+    if (points >= 4) {
+        quizTitle.innerHTML = `${points} pontos. Você se beneficiaria muito do sistema de Predições e Alertas em tempo real da Orbita para evitar prejuízos financeiros.`;
+    } else {
+        quizTitle.innerHTML = `${points} pontos. Seus processos atuais são seguros, mas o Plano Normal da Orbita pode automatizar seu mapeamento por um custo fixo baixo.`;
+    }
+}
+
+loadQuestion()
+

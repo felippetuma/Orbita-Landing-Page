@@ -437,7 +437,7 @@ footer {
     font-weight: 500;
     background-color: var(--title-color);
     color: var(--bg-color);
-    
+
     border-radius: 4px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -454,9 +454,6 @@ footer {
     letter-spacing: 0.5px;
     text-align: center;
 }
-
-
-
 
 /* Button to top */
 #topButton {
