@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     gap: 25px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 3%;
@@ -40,9 +40,9 @@ body {
     color: var(--title-color);
     font-size: 40px;
     font-weight: 600;
-
+    
     max-width: 800px;
-
+    
     text-align: center;
     margin: auto;
     padding: 0 20px;
@@ -52,7 +52,7 @@ body {
     color: var(--para-color);
     font-size: 17px;
     text-align: center;
-
+    
     opacity: 75%;
     text-transform: uppercase;
 }
@@ -60,7 +60,7 @@ body {
 .quiz-list {
     display: flex;
     flex-direction: column;
-
+    user-select: none;  
     gap: 15px;
 }
 
@@ -72,10 +72,9 @@ body {
     background-color: var(--card-bg);
     padding: 20px 50px;
     border-radius: 10px;
-
+    user-select: none;  
     transition: transform 0.3s ease;
     cursor: pointer;
-
     fill-opacity: 5%;
     text-decoration: none;
 }
@@ -84,7 +83,7 @@ body {
     color: var(--title-color);
     font-weight: 600;
     opacity: 70%;
-
+    
 }
 
 
