@@ -52,7 +52,7 @@ window.addEventListener("scroll", function(){
         topButton.style.display = "flex";
     } else {
         topButton.style.display = "none";
-    }
+  }
 })
 
 let currentTheme = 0
@@ -65,11 +65,8 @@ function switchTheme() {
         root.style.setProperty('--bg-color', '#1d1c1c');
         root.style.setProperty('--copyright-theme', '#555555')
         document.querySelectorAll('.plans, footer, .quiz-section').forEach(el => el.style.backgroundColor = '#1d1c1c');
-<<<<<<< HEAD
-    } 
-}
-=======
-    } else if (currentTheme === 1) {
+
+    }  else if (currentTheme === 1) {
         root.style.setProperty('--bg-color', '#0f1f15');
         root.style.setProperty('--copyright-theme', '#e7e7e7')
         document.querySelectorAll('.plans, footer, .quiz-section').forEach(el => el.style.backgroundColor = '#0f1f15');
@@ -190,4 +187,3 @@ function showResult() {
 
 loadQuestion()
 
->>>>>>> 41d84d52af12f22b0d8a89c0e03eab9e51e87062
