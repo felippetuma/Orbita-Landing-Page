@@ -450,7 +450,15 @@ footer {
 .email-button:hover {
     transform: scale(1.05);
 }
-
+.footer-integrantes {
+    color: white;
+    h1 {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
 .footer-copyright {
     color: var(--copyright-theme);
     font-size: 12px;
