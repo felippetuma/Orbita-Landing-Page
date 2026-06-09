@@ -23,6 +23,5 @@ function switchTheme() {
         root.style.setProperty('--bg-color', '#1d1c1c');
         root.style.setProperty('--copyright-theme', '#555555')
         document.querySelectorAll('.plans, footer, .quiz-section').forEach(el => el.style.backgroundColor = '#1d1c1c');
-
     } 
 }
