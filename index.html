@@ -7,152 +7,163 @@
     <title>Orbita</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <header>
-            <a href="/index.html" class="header-logo"> <img class="logo" width="40"src="/assets/icons/orbita-logo.png" alt="Imagem da logo da Orbita">ORBITA</a>
-            <ul class="header-navs">
-                <li><a href="#problema">Problema</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#objetivos">Objetivos</a></li>
-                <li><a href="#publico">Publico</a></li>
-                <li><a href="#beneficios">Beneficios</a></li>
-                <li><a href="#aplicacao">Aplicação</a></li>
-            </ul>
-            
-            <div class="header-right" style="cursor: pointer;">
-                <a href="#planos-container" class="header-button">Planos</a>
-                <a onclick="switchTheme()" class="header-button">Tema</a>
-            </div>
-        </header>
+<body>
+    <header>
+        <a href="/index.html" class="header-logo"> <img class="logo" width="40"src="/assets/icons/orbita-logo.png" alt="Imagem da logo da Orbita">ORBITA</a>
+        <ul class="header-navs">
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#publico">Publico</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#aplicacao">Aplicação</a></li>
+        </ul>
         
-       
-
-        <section class="quiz-section">
-
-            <div class="quiz-container">
-                <h1>Descubra o potencial da sua terra<br>através do nosso Quiz</h1>
-                <p>Responda a algumas perguntas rápidas e veja como a tecnologia pode otimizar a sua plantação.</p>
-
-                <div class="quiz-buttons">
-                    <a href="pages/quiz.html" class="quiz-button">Começar Quiz</a>
-                </div>
-            </div>
-            
-            <div class="quiz-bg" style="cursor: pointer;">
-                <img id="slideshow-image" class="quiz-slide-active" src="/assets/images/field_1.jpg" alt="Campo de agricultura 1">
-                <div class="quiz-overlay"></div>
-            </div>
-        </section>
-
-        <section id="planos-container" class="plans">
-            <h1 class="plans-main-title">Planos</h1>
-            <h3 class="plans-price">Preço Fixo Por Hectare: <span>R$ 20</span></h3>
-            <p class="plans-minimum-note">*Contratação mínima de 15 hectares</p>
-
-            <div class="plans-grid">
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h2 class="plan-title">Plano Normal</h2>
-                        <p class="plan-description">O plano normal terá funcionalidades limitadas como: visualização do mapa e alertas avisos.</p>
-                    </div>
-                    
-                    <div class="plan-details">
-                        <p class="detail-item">Multiplicador de Preço Normal: <span>1x</span></p>
-                        <p class="detail-item">Limite p/Hectare: <span>2.000</span></p>
-                    </div>
-
-                    <div class="plan-price-box">
-                        <span class="price-prefix">A PARTIR DE</span>
-                        <div class="price-value">R$ 300<span>/mês</span></div>
-                        <button onclick="plansButtonClick()" class="plan-button">Assinar</button>
-                    </div>
-                </div>
-
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h2 class="plan-title">Plano Premium</h2>
-                        <p class="plan-description">Tudo do Plano Normal + sistema completo de Predições e Recomendações em tempo real.</p>
-                    </div>
-                    
-                    <div class="plan-details">
-                        <p class="detail-item">Multiplicador de Preço Normal: <span>1.5x</span></p>
-                        <p class="detail-item">Limite p/Hectare: <span>20.000</span></p>
-                    </div>
-
-                    <div class="plan-price-box">
-                        <span class="price-prefix">A PARTIR DE</span>
-                        <div class="price-value">R$ 450<span>/mês</span></div>
-                        <button onclick="plansButtonClick()" class="plan-button">Assinar</button>
-                    </div>
-                </div>
-            </div>
+        <div class="header-right" style="cursor: pointer;">
+            <a href="#planos-container" class="header-button">Planos</a>
+            <a onclick="switchTheme()" class="header-button">Tema</a>
+        </div>
+    </header>
+    
+    
+    
+    <section class="quiz-section">
         
-            <h3 class="plans-footer-note">Caso queira expandir o limite, converse conosco!</h3>
-        </section>
-
-        <div class="sections">
-            <section id="problema" class="problema">
-                <img width="45" src="/assets/icons/alert.png" alt="icone de sinal de alerta">
-                <h1>Problema</h1>
-                <p>O agronegócio movimenta grande parte da economia brasileira, mas muitos produtores ainda tomam decisões com base em informações limitadas e desatualizadas. A falta de monitoramento em tempo real dificulta a identificação de incêndios, enchentes, pragas e outros riscos que podem comprometer a produção. </p>
-                <p>Além disso, as soluções disponíveis no mercado costumam ser caras, complexas ou fragmentadas, obrigando o produtor a utilizar várias ferramentas diferentes. Como resultado, ocorrem perdas financeiras, desperdício de recursos e menor produtividade nas propriedades rurais</p>
-            </section>
-
-            <section id="tecnologia" class="tecnologia">
-                <img width="50" src="/assets/icons/tech-dev.png" alt="icone de trecho de codigo dev">
-                <h1>Tecnologia</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, asperiores.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, incidunt!</p>
-            </section>
-
-            <section id="objetivos" class="objetivos">
-                <img width="40" src="/assets/icons/target-arrow.png" alt="icone de tiro ao alvo flecha">
-                <h1>Objetivos</h1>
-                <p>A Orbita tem como objetivo transformar dados de satélites, informações climáticas e inteligência artificial em soluções práticas para o agronegócio. Buscamos fornecer aos produtores rurais uma visão completa e atualizada de suas propriedades, permitindo o monitoramento eficiente de cada hectare e facilitando a identificação de riscos antes que eles causem grandes prejuízos.</p>
-                <p>Além disso, queremos tornar a tecnologia mais acessível ao campo, auxiliando na tomada de decisões com base em dados precisos e previsões inteligentes. Nosso intuito é reduzir perdas causadas por desastres naturais e pragas, aumentar a produtividade das lavouras e contribuir para um agronegócio mais seguro, moderno e sustentável.</p>
-            </section>
-
-            <section id="publico" class="publico">
-                <img width="45" src="/assets/icons/people-group.png" alt="icone de um grupo de pessoas">
-                <h1>Público</h1>
-                <p>A Orbita foi desenvolvida para produtores rurais, fazendeiros, cooperativas agrícolas e gestores do agronegócio que buscam maior controle e segurança sobre suas propriedades. Nossa plataforma atende desde produtores de médios porte ate grandes operações agrícolas que necessitam monitorar extensas áreas de cultivo de forma eficiente. </p>
-                <p>Além disso, a solução também é voltada para profissionais que desejam utilizar tecnologia e dados para melhorar a tomada de decisões no campo. Com recursos de monitoramento, previsão de riscos e análise inteligente, a Orbita auxilia usuários que buscam aumentar a produtividade, reduzir prejuízos e otimizar a gestão de suas lavouras.</p>
-            </section>
-
-            <section id="beneficios" class="beneficios">
-                <img width="45" src="/assets/icons/achievement.png" alt="icone de uma estrela representando beneficios">
-                <h1>Benefícios</h1>
-                <p>A Orbita traz mais segurança, eficiência e previsibilidade para o agronegócio ao transformar dados complexos em informações úteis para o produtor rural. Com o monitoramento contínuo dos lotes e áreas de cultivo, a plataforma permite identificar riscos com antecedência, acompanhar as condições climáticas em tempo real e receber alertas sobre possíveis ameaças à produção, possibilitando ações rápidas e reduzindo perdas causadas por desastres naturais e pragas.   </p>
-                <p>Além disso, a solução contribui para uma gestão mais inteligente das lavouras ao centralizar informações importantes em um único ambiente. Com recursos de análise, monitoramento geoespacial e recomendações personalizadas, a Orbita ajuda produtores a otimizar recursos, aumentar a produtividade e tomar decisões com mais confiança, tornando a gestão agrícola mais moderna, estratégica e eficiente.</p>
-            </section>
-
-            <section id="aplicacao" class="aplicacao">
-                <img width="45" src="/assets/icons/puzzle.png" alt="icone peça de quebra cabeça">
-                <h1>Aplicação</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, perferendis?</p>
-            </section>
+        <div class="quiz-container">
+            <h1>Descubra o potencial da sua terra<br>através do nosso Quiz</h1>
+            <p>Responda a algumas perguntas rápidas e veja como a tecnologia pode otimizar a sua plantação.</p>
+            
+            <div class="quiz-buttons">
+                <a href="pages/quiz.html" class="quiz-button">Começar Quiz</a>
+            </div>
         </div>
         
-        <button id="topButton" onclick="backToTop()">
-            <span>↑</span>
-        </button>
-
-        <footer>
-            <div class="footer-content">
-                <ul class="footer-navs">
-                    <h1>Inscreva-se para receber nossas noticias</h1>
-
-                    <form class="email-form">
-                        <input id="email-input" placeholder="Email" type="email" required>
-                        <button type="submit" onclick="validateForm()" class="email-button">Assinar</button>
-                    </form>
-                </ul>
+        <div class="quiz-bg" style="cursor: pointer;">
+            <img id="slideshow-image" class="quiz-slide-active" src="/assets/images/field_1.jpg" alt="Campo de agricultura 1">
+            <div class="quiz-overlay"></div>
+        </div>
+    </section>
+    
+    <section id="planos-container" class="plans">
+        <h1 class="plans-main-title">Planos</h1>
+        <h3 class="plans-price">Preço Fixo Por Hectare: <span>R$ 20</span></h3>
+        <p class="plans-minimum-note">*Contratação mínima de 15 hectares</p>
+        
+        <div class="plans-grid">
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h2 class="plan-title">Plano Normal</h2>
+                    <p class="plan-description">O plano normal terá funcionalidades limitadas como: visualização do mapa e alertas avisos.</p>
+                </div>
                 
-                <p class="footer-copyright">&copy; 2026 Orbita. Todos os direitos reservados.</p>
-
+                <div class="plan-details">
+                    <p class="detail-item">Multiplicador de Preço Normal: <span>1x</span></p>
+                    <p class="detail-item">Limite p/Hectare: <span>2.000</span></p>
+                </div>
+                
+                <div class="plan-price-box">
+                    <span class="price-prefix">A PARTIR DE</span>
+                    <div class="price-value">R$ 300<span>/mês</span></div>
+                    <button onclick="plansButtonClick()" class="plan-button">Assinar</button>
+                </div>
             </div>
-        </footer>
-
-        <script src="/script.js"></script>
-    </body>
+            
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h2 class="plan-title">Plano Premium</h2>
+                    <p class="plan-description">Tudo do Plano Normal + sistema completo de Predições e Recomendações em tempo real.</p>
+                </div>
+                
+                <div class="plan-details">
+                    <p class="detail-item">Multiplicador de Preço Normal: <span>1.5x</span></p>
+                    <p class="detail-item">Limite p/Hectare: <span>20.000</span></p>
+                </div>
+                
+                <div class="plan-price-box">
+                    <span class="price-prefix">A PARTIR DE</span>
+                    <div class="price-value">R$ 450<span>/mês</span></div>
+                    <button onclick="plansButtonClick()" class="plan-button">Assinar</button>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="plans-footer-note">Caso queira expandir o limite, converse conosco!</h3>
+    </section>
+    
+    <div class="sections">
+        <section id="problema" class="problema">
+            <img width="45" src="/assets/icons/alert.png" alt="icone de sinal de alerta">
+            <h1>Problema</h1>
+            <p>O agronegócio movimenta grande parte da economia brasileira, mas muitos produtores ainda tomam decisões com base em informações limitadas e desatualizadas. A falta de monitoramento em tempo real dificulta a identificação de incêndios, enchentes, pragas e outros riscos que podem comprometer a produção. </p>
+            <p>Além disso, as soluções disponíveis no mercado costumam ser caras, complexas ou fragmentadas, obrigando o produtor a utilizar várias ferramentas diferentes. Como resultado, ocorrem perdas financeiras, desperdício de recursos e menor produtividade nas propriedades rurais</p>
+        </section>
+        
+        <section id="tecnologia" class="tecnologia">
+            <img width="50" src="/assets/icons/tech-dev.png" alt="icone de trecho de codigo dev">
+            <h1>Tecnologia</h1>
+            <p>A Orbita utiliza dados satelitais em tempo real, APIs climáticas e Machine Learning para monitorar plantações com precisão orbital.</p>
+            <p>O sistema integra sensoriamento remoto da NASA, ESA e INPE, processando informações de temperatura, umidade e risco de desastres continuamente.</p>
+        </section>
+        
+        <section id="objetivos" class="objetivos">
+            <img width="40" src="/assets/icons/target-arrow.png" alt="icone de tiro ao alvo flecha">
+            <h1>Objetivos</h1>
+            <p>A Orbita tem como objetivo transformar dados de satélites, informações climáticas e inteligência artificial em soluções práticas para o agronegócio. Buscamos fornecer aos produtores rurais uma visão completa e atualizada de suas propriedades, permitindo o monitoramento eficiente de cada hectare e facilitando a identificação de riscos antes que eles causem grandes prejuízos.</p>
+            <p>Além disso, queremos tornar a tecnologia mais acessível ao campo, auxiliando na tomada de decisões com base em dados precisos e previsões inteligentes. Nosso intuito é reduzir perdas causadas por desastres naturais e pragas, aumentar a produtividade das lavouras e contribuir para um agronegócio mais seguro, moderno e sustentável.</p>
+        </section>
+        
+        <section id="publico" class="publico">
+            <img width="45" src="/assets/icons/people-group.png" alt="icone de um grupo de pessoas">
+            <h1>Público</h1>
+            <p>A Orbita foi desenvolvida para produtores rurais, fazendeiros, cooperativas agrícolas e gestores do agronegócio que buscam maior controle e segurança sobre suas propriedades. Nossa plataforma atende desde produtores de médios porte ate grandes operações agrícolas que necessitam monitorar extensas áreas de cultivo de forma eficiente. </p>
+            <p>Além disso, a solução também é voltada para profissionais que desejam utilizar tecnologia e dados para melhorar a tomada de decisões no campo. Com recursos de monitoramento, previsão de riscos e análise inteligente, a Orbita auxilia usuários que buscam aumentar a produtividade, reduzir prejuízos e otimizar a gestão de suas lavouras.</p>
+        </section>
+        
+        <section id="beneficios" class="beneficios">
+            <img width="45" src="/assets/icons/achievement.png" alt="icone de uma estrela representando beneficios">
+            <h1>Benefícios</h1>
+            <p>A Orbita traz mais segurança, eficiência e previsibilidade para o agronegócio ao transformar dados complexos em informações úteis para o produtor rural. Com o monitoramento contínuo dos lotes e áreas de cultivo, a plataforma permite identificar riscos com antecedência, acompanhar as condições climáticas em tempo real e receber alertas sobre possíveis ameaças à produção, possibilitando ações rápidas e reduzindo perdas causadas por desastres naturais e pragas.   </p>
+            <p>Além disso, a solução contribui para uma gestão mais inteligente das lavouras ao centralizar informações importantes em um único ambiente. Com recursos de análise, monitoramento geoespacial e recomendações personalizadas, a Orbita ajuda produtores a otimizar recursos, aumentar a produtividade e tomar decisões com mais confiança, tornando a gestão agrícola mais moderna, estratégica e eficiente.</p>
+        </section>
+        
+        <section id="aplicacao" class="aplicacao">
+            <img width="45" src="/assets/icons/puzzle.png" alt="icone peça de quebra cabeça">
+            <h1>Aplicação</h1>
+            <p>Agricultores acessam alertas de pragas, enchentes e secas diretamente pelo celular, tomando decisões mais rápidas e seguras para sua lavoura.</p>
+            <p>Com a marcação de terreno no mapa, o produtor controla cada hectare plantado e recebe recomendações personalizadas baseadas em dados reais.</p>
+        </section>
+    </div>
+    
+    <button id="topButton" onclick="backToTop()">
+        <span>↑</span>
+    </button>
+    
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-navs">
+                <h1>Inscreva-se para receber nossas noticias</h1>
+                
+                <form class="email-form">
+                    <input id="email-input" placeholder="Email" type="email" required>
+                    <button type="submit" onclick="validateForm()" class="email-button">Assinar</button>
+                </form>
+            </ul>
+            
+            
+            <div class="footer-integrantes">
+                <h1>Integrantes:</h1>
+                <h2>Davi Toyota RM: 569557</h2>
+                <h2>Diego Rocha RM: 571682</h2>
+                <h2>Felippe Tuma RM: 569459</h2>
+                <h2>Renan Matins RM: 569549</h2>
+                <h2>Roandry Fernadez RM: 569980</h2>
+            </div>
+            
+            <p class="footer-copyright">&copy; 2026 Orbita. Todos os direitos reservados.</p>
+            
+        </div>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
 </html>
