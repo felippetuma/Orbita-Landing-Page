@@ -9,6 +9,18 @@
     --copyright-theme: #555555;
 }
 
+@keyframes gradativamente {
+  from {
+    opacity: 0;
+    transform: translateY(100px); /* Começa 100px mais para baixo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Volta para a posição original */
+  }
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -237,6 +249,9 @@ header {
     gap: 30px;
     width: 100%;
     max-width: 1100px;
+    animation: gradativamente linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
 }
 
 .plan-card {
@@ -337,6 +352,9 @@ header {
     gap: 15px;
     scroll-margin-top: 80px;
     text-align: center;
+    animation: gradativamente linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
 }
 
 .section-icon {
