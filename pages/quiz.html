@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/icons/orbita-logo.png">
+    <title>Orbita - Quiz</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/quiz.css">
+</head>
+    <body>
+        <header>
+            <a href="/index.html" class="header-logo"> <img class="logo" width="40"src="/assets/icons/orbita-logo.png" alt="Imagem da logo da Orbita">ORBITA</a>
+            <ul class="header-navs">
+                <li><a href="/index.html#problema">Problema</a></li>
+                <li><a href="/index.html#tecnologia">Tecnologia</a></li>
+                <li><a href="/index.html#objetivos">Objetivos</a></li>
+                <li><a href="/index.html#publico">Publico</a></li>
+                <li><a href="/index.html#beneficios">Beneficios</a></li>
+                <li><a href="/index.html#aplicacao">Aplicação</a></li>
+            </ul>
+            
+            <div class="header-right" style="cursor: pointer;">
+                <a href="/index.html#planos-container" class="header-button">Planos</a>
+            </div>
+        </header>
+
+        <section class="quiz-body">
+            <h1 class="quiz-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, voluptatibus.</h1>
+
+            <p class="quiz-description">Este quiz não salvará nenhum de seus dados.</p>
+
+            <ul class="quiz-list">
+                <button selected="false" onclick="registerAnswer('yes')" class="quiz-button">Sim</button>
+                <button selected="false" onclick="registerAnswer('no')" class="quiz-button">Não</button>
+            </ul>
+            
+            <a id="quiz-return" class="quiz-button" href="/index.html">Sair</a>
+            
+            <p class="quiz-counter">1/?</p>
+        </section>
+
+        <footer>
+            <div class="footer-content">                
+                <p class="footer-copyright">&copy; 2026 Orbita. Todos os direitos reservados.</p>
+
+            </div>
+        </footer>
+        
+        <script src="/script.js"></script>
+    </body>
+</html>
