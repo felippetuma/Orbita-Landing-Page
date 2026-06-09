@@ -74,6 +74,10 @@ function switchTheme() {
         root.style.setProperty('--bg-color', '#24496e');
         root.style.setProperty('--copyright-theme', '#e7e7e7')
         document.querySelectorAll('.plans, footer, .quiz-section').forEach(el => el.style.backgroundColor = '#24496e');
+    } else if (currentTheme === 3) {
+        root.style.setProperty('--bg-color', '#90976d');
+        root.style.setProperty('--copyright-theme', '#e7e7e7')
+        document.querySelectorAll('.plans, footer, .quiz-section').forEach(el => el.style.backgroundColor = '#90976d');
     }
 }
 
